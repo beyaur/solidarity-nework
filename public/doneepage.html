@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit your campaign here for support">
+  <title>I'm a Donee - Solidarity Network</title>
+  <link rel="stylesheet" href="style.css"> <!-- Shared CSS -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+  <body class="donee">
+    <!-- New Header Image Section (above the main navbar) -->
+    <header class="navbar-header">
+      <!-- You can optionally add text or a logo here, if desired -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Solidarity Network</a>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="home-link">Home</a></li>
+            <li><a href="donorpage.html" class="donor-link">I'm a Donor</a></li>
+            <li><a href="doneepage.html" class="donee-link">I'm a Donee</a></li>
+            <li><a href="about.html" class="about-link">About Us</a></li>
+            <li><a href="boycottpage.html" class="boycott-link">Boycott</a></li>
+            <li><a href="linkpage.html" class="links-link">Link Page</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <!-- Centered Content for Donee -->
+  <div class="donee-content">
+    <h1>Submit Your Campaign Here</h1>
+  
+    
+    <footer>
+      <p> Why the Artworld Must Stand with Palestine. (n.d.). ArtReview. https://artreview.com/why-the-artworld-must-stand-with-palestine/ </p>
+    </footer>
+    
+    <!-- Submission Form -->
+    <form id="submit-form">
+      <input type="text" id="campaign-link" placeholder="Enter your campaign link" required>
+      <input type="number" id="donation-progress" placeholder="Enter donation progress in numbers (0-100)" required>
+
+      <!-- Honeypot Field (Hidden) -->
+      <div style="display:none;">
+        <label for="honeypot">Leave this field empty</label>
+        <input type="text" id="honeypot" name="honeypot">
+      </div>
+
+      <button type="submit">Submit Campaign</button>
+    </form>
+
+    <!-- Status message will appear here -->
+    <div id="status-message"></div>
+  </div>
+
+  <!-- Footer Removed as per your request -->
+
+</body>
+</html>

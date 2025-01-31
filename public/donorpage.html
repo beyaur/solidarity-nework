@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Donate to our causes">
+  <title>I'm a Donor - Solidarity Network</title>
+  <link rel="stylesheet" href="style.css"> <!-- Shared CSS -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+  <body class="donor">
+    <!-- New Header Image Section (above the main navbar) -->
+    <header class="navbar-header">
+      <!-- You can optionally add text or a logo here, if desired -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Solidarity Network</a>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="home-link">Home</a></li>
+            <li><a href="donorpage.html" class="donor-link">I'm a Donor</a></li>
+            <li><a href="doneepage.html" class="donee-link">I'm a Donee</a></li>
+            <li><a href="about.html" class="about-link">About Us</a></li>
+            <li><a href="boycottpage.html" class="boycott-link">Boycott</a></li>
+            <li><a href="linkpage.html" class="links-link">Link Page</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <!-- Donation Links Section -->
+  <div class="donate-content">
+    <h1>Support Our Causes</h1>
+    <div class="donate-boxes" id="donate-links">
+      <!-- Donation links dynamically populated by JavaScript -->
+    </div>
+  </div>
+
+  <footer> 
+  <p> Murchú, N. Ó., Snyder, K., & Miller, M. J. (2023). Colors of Palestine. Deleted Journal, 10(1). https://doi.org/10.16995/intransition.11277 </p>
+  </footer>
+
+ <script>
+   // Fetch data from your Google Sheets CSV link
+   const sheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSezeiysXf96JrAdStDM33nenr0ywZ77RxtxGleo2-IyBcdTyigyiyh04zArZndI8maUL9wqjqdDKFn/pub?output=csv';
+
+   // Function to fetch and parse the CSV data
+   async function fetchCSV() {
+     try {
+       const response = await fetch(sheetURL);
+       const data = await response.text();
+       return parseCSV(data);
+     } catch (error) {
+       console.error("Error fetching CSV data:", error);
+     }
+   }
+
+   // Function to parse CSV into an array of objects
+   function parseCSV(csvText) {
+     const rows = csvText.split("\n").map(row => row.split(","));
+     const headers = rows[0];
+     const data = rows.slice(1).map(row => {
+       let entry = {};
+       row.forEach((value, index) => {
+         entry[headers[index].trim()] = value.trim(); // Trim spaces from both header and value
+       });
+       return entry;
+     });
+
+     console.log("Parsed Data:", data); // Debugging: log the parsed data to check if progress is being correctly extracted
+     return data;
+   }
+
+
+   // Function to apply color-coding based on donation percentage
+   function getColorBasedOnProgress(progress) {
+     if (progress < 50) {
+       return 'red'; // Less than 50% - Red
+     } else if (progress === 50) {
+       return 'orange'; // Exactly 50% - Orange
+     } else {
+       return 'green'; // More than 50% - Green
+     }
+   }
+
+   // Function to format the link text (as per your earlier request)
+   function formatLinkText(url) {
+     try {
+       // Ensure URL is not empty or undefined
+       if (!url || !url.startsWith('http')) {
+         console.error("Invalid or missing URL:", url); // Log if URL is malformed or missing
+         return "Invalid URL";
+       }
+
+       // Clean the URL and format the display text by removing query parameters like utm_campaign
+       const cleanedUrl = new URL(url.trim());
+       cleanedUrl.search = ''; // Remove any query parameters like utm_campaign
+
+       // Custom rules for specific URLs
+       if (url.includes("gofundme.com")) {
+         // Extract the campaign title from the URL by splitting by /f/ and replacing hyphens with spaces
+         const campaignTitle = cleanedUrl.pathname.split("/f/")[1].replace(/-/g, " ");
+         return campaignTitle;
+       } else if (url.includes("paypal.com")) {
+         return "Donate PayPal";
+       } else if (url.includes("buymeacoffee.com")) {
+         return "Donate Buy Me a Coffee";
+       } else if (url.includes("gogetfunding.com")) {
+         // Extract the campaign title for GoGetFunding
+         const campaignTitle = cleanedUrl.pathname.split("/")[1].replace(/-/g, " ");
+         return campaignTitle;
+       } else if (url.includes("gazafunds.com")) {
+         return "Gaza Funds";
+       } else {
+         return cleanedUrl.hostname; // Return hostname for other cases
+       }
+     } catch (error) {
+       console.error("Error formatting URL:", error, url); // Log error with the URL that failed
+       return "Invalid URL"; // Return a fallback message if URL is invalid
+     }
+   }
+
+   // Function to dynamically display the donation links on your page
+   async function displayDonationLinks() {
+     const data = await fetchCSV();
+
+     if (!data || data.length === 0) {
+       console.error("No data found in CSV");
+       return; // Return if no data was fetched or the data is empty
+     }
+
+     // Sort data by donation progress, less than 50% first, then 50%, then greater than 50%
+     data.sort((a, b) => {
+       const progressA = parseFloat(a["Donation Progress"]) || 0;
+       const progressB = parseFloat(b["Donation Progress"]) || 0;
+       return progressA - progressB; // Sort by progress (ascending)
+     });
+
+     const donateBoxes = document.getElementById("donate-links");
+
+     data.forEach(entry => {
+       const link = entry["Donation Link"];
+       const progress = parseFloat(entry["Donation Progress"]) || 0;
+       const color = getColorBasedOnProgress(progress);
+       const displayText = formatLinkText(link);
+
+       // Only create and append the link if the URL is valid and data is complete
+       if (displayText !== "Invalid URL" && link) {
+         const anchor = document.createElement("a");
+         anchor.href = link;
+         anchor.className = "donate-box";
+
+         // Append donation progress to the display text
+         anchor.textContent = `${displayText}, ${progress}%`; // Link title with progress
+         anchor.style.backgroundColor = color; // Apply the color dynamically
+         donateBoxes.appendChild(anchor);
+       }
+     });
+   }
+
+   // Call the function to display the links
+   displayDonationLinks();
+
+   window.onload = () => {
+     // Show the confirmation box when the user arrives at the page
+     const confirmBox = confirm("Wait! Hold on, do you want to be further notified about campaigns?");
+
+     if (confirmBox) {
+       // If the user says "Yes", prompt them to enter their email
+       const email = prompt("Input your email");
+
+       if (email) {
+         // If the user enters an email, send it to the server
+         fetch('/submit-email', {
+           method: 'POST',
+           headers: {
+             'Content-Type': 'application/x-www-form-urlencoded',
+           },
+           body: `email=${encodeURIComponent(email)}`,
+         })
+         .then(response => response.text())
+         .then(data => {
+           alert(data); // Show success or error message
+         })
+         .catch(error => {
+           console.error("Error:", error);
+           alert("Something went wrong. Please try again.");
+         });
+       }
+     } else {
+       console.log("User chose not to be notified.");
+     }
+   }
+ </script>
+</body>
+</html>

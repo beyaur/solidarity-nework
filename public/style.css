@@ -1,0 +1,291 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  height: 100%;
+  padding-top: 70px; /* Space to prevent nav bar overlap */
+  background-color: #1abc9c; /* Default background color */
+}
+
+/* Home Page Background */
+body.home {
+  background-image: url('images/homepagebg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Donee Page Background */
+body.donee {
+  background-image: url('images/homepagebg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Donor Page Background */
+body.donor {
+  background-image: url('images/colorpattern.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Link Page Background */
+body.links {
+  background-image: url('images/linkpage_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* About Us Page Background */
+body.about {
+  background-image: url('images/boycott_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Boycott Page Background */
+body.boycott {
+  background-image: url('images/boycott_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Fixed Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333333; /* Blue background */
+  color: white;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+/* New Header Image */
+.navbar-header {
+  width: 100%;
+  height: 10%; /* Half the height of the navbar */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShxaP5lNKM2NVI4EBPSF4WjbXL0sUurJCOEg&s'); /* Your header image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo and Navbar Content */
+.navbar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin-right: 20px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Color Boxes for Each Hyperlink */
+a:hover, a:active {
+  opacity: 0.5;
+}
+
+
+.home-link {
+  background-color: indianred; 
+}
+.donor-link {
+  background-color: darkgrey; 
+}
+.donee-link {
+  background-color: lightgrey; 
+}
+.links-link {
+  background-color: lightgreen; 
+}
+.boycott-link {
+  background-color: #F0E68C; 
+}
+.about-link {
+  background-color: mediumpurple;
+}
+
+/* Centered Content */
+.centered-content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(255, 255, 255, 0.5); /* Slightly translucent white */
+  color: black;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero h2 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* Donate Box Styles */
+.donate-box {
+  display: inline-block;
+  color: white;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Donor Page Donate Boxes */
+.donor .donate-box {
+  background-color: red; /* Red color */
+}
+
+.donor .donate-box:hover {
+  background-color: #c0392b;
+}
+
+/* Donor Page Specific Styles */
+.donor .donate-content {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.donor .donate-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Added text shadow */
+}
+
+.donate-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Donee Page */
+.donee-content {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.donee-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Centered Form on Donee Page */
+#submit-form {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#submit-form input,
+#submit-form button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+#submit-form input {
+  width: 300px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#status-message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* reCAPTCHA Centering */
+.g-recaptcha {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Ensure Footer at the Bottom */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section, .boycott-section, .linkpage-section {
+  padding-bottom: 150px;
+  margin: auto;
+  width:600px;
+}
+
+.link-box a{
+  font-size: 20px;
+  color: white;
+}
