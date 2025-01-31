@@ -65,13 +65,13 @@ body.boycott {
   background-color: #333333; /* Blue background */
   color: white;
   z-index: 1000;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 /* New Header Image */
 .navbar-header {
   width: 100%;
-  height: 10%; /* Half the height of the navbar */
+  height: 5%; /* Half the height of the navbar */
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShxaP5lNKM2NVI4EBPSF4WjbXL0sUurJCOEg&s'); /* Your header image */
   background-size: cover;
   background-position: center;
