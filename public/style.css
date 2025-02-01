@@ -93,7 +93,8 @@ body.boycott {
 .navbar .logo {
   font-size: 24px;
   color: white;
-  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
 }
 
 .navbar nav ul {
@@ -123,22 +124,28 @@ a:hover, a:active {
 
 
 .home-link {
-  background-color: indianred; 
+  background-color: indianred;
+  border: 2px solid darkred;
 }
 .donor-link {
-  background-color: darkgrey; 
+  background-color: darkgrey;
+  border: 2px solid black;
 }
 .donee-link {
-  background-color: lightgrey; 
+  background-color: lightgrey;
+  border: 2px solid darkgrey;
 }
 .links-link {
-  background-color: lightgreen; 
+  background-color: lightgreen;
+  border: 2px solid green;
 }
 .boycott-link {
-  background-color: #F0E68C; 
+  background-color: #F0E68C;
+  border: 2px solid yellow:
 }
 .about-link {
   background-color: mediumpurple;
+  border: 2px solid purple;
 }
 
 /* Centered Content */
