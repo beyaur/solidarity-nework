@@ -122,7 +122,6 @@ a:hover, a:active {
   opacity: 0.5;
 }
 
-
 .home-link {
   background-color: indianred;
   border: 2px solid darkred;
@@ -141,7 +140,7 @@ a:hover, a:active {
 }
 .boycott-link {
   background-color: #F0E68C;
-  border: 2px solid yellow:
+  border: 2px solid yellow;
 }
 .about-link {
   background-color: mediumpurple;
@@ -166,18 +165,27 @@ footer {
   margin-top: 50px;
 }
 
-/* New Header Image Above Footer */
-.footer-image-header {
-  width: 100%;
-  height: 200px; /* Adjust the height as needed */
-  background-image: url('your-image-url-here.jpg'); /* Replace with your image URL */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Small Header Above Footer */
+.footer-header {
+  background-color: #2c3e50; /* Dark background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px; /* Spacing between header and footer */
 }
 
+.footer-header h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer-header p {
+  font-size: 1em;
+}
+
+footer p {
+  margin: 10px 0;
+}
 
 /* Hero Section */
 .hero {
@@ -301,7 +309,19 @@ html, body {
   width:600px;
 }
 
-.link-box a{
+.link-box a {
   font-size: 20px;
   color: white;
+}
+
+/* New Header Image Above Footer */
+.footer-image-header {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  background-image: url('your-image-url-here.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
