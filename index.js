@@ -56,3 +56,22 @@ app.post('/send-email', (req, res) => {
 // Step 5: Start the HTTP server on port 3000
 const port = 3000;
 app.listen(port, () => console.log(`App listening on port ${port}`));
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const messages = [
+    "Welcome to Solidarity Network!",
+    "Support Palestine, support justice.",
+    "Click around to learn more!",
+    "Together, we make a difference.",
+    "Boycott, divest, and stand for Palestine!",
+  ];
+
+  const speechBubble = document.getElementById("speech-bubble");
+
+  setInterval(() => {
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    speechBubble.textContent = randomMessage;
+  }, 5000);
+});
+
