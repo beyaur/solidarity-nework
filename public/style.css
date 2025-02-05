@@ -41,7 +41,7 @@ body.links {
   background-image: url('images/Palestinian_textile.jpg'), url('images/Palestinian_textile.jpg');
   background-position: right, left;
   background-repeat: repeat-y, repeat-y;
-  background-size: 100px;
+  background-size: 10%;
 }
 
 /* About Us Page Background */
