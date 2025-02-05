@@ -75,6 +75,7 @@
   // Add event listener to form
   document.getElementById('submit-form').addEventListener('submit', handleSubmit);
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const messages = [
     "Welcome to Solidarity Network!",
@@ -89,14 +90,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(() => {
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
     speechBubble.textContent = randomMessage;
-  }, 5000); // Changes message every 5 seconds
+  }, 5000);
 });
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'  // Makes the scroll smooth
-  });
-}
-
-
