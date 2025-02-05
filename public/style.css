@@ -338,3 +338,18 @@ html, body {
   opacity: 1;
 }
 
+/* Back to Top Sprite Positioning */
+.back-to-top-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back-to-top-sprite {
+  width: 10px; /* Adjust as needed */
+  height: auto;
+}
+
+
