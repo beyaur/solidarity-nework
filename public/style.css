@@ -38,6 +38,10 @@ body.donor {
 /* Link Page Background */
 body.links {  
   background-color: #889E73;
+  background-image: url('images/Palestinian_textile.jpg');
+  background-size: 200px;
+  background-position-x: right;
+  background-repeat: repeat-y;
 }
 
 /* About Us Page Background */
