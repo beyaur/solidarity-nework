@@ -301,12 +301,11 @@ html, body {
   position: fixed;
   left: 20px;
   bottom: 20px;
-  z-index: 1000; 
-  background-image: url('images/spriteee-removebg-preview.png');
+  z-index: 1000;
 }
 
 .mascot img {
-  width: 120px; /* Adjust for mascot size */
+  width: 120px; /* Adjust size as needed */
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -329,6 +328,10 @@ html, body {
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+}
+
+.mascot:hover .speech-bubble {
+  opacity: 1;
 }
 
 .mascot:hover .speech-bubble {
