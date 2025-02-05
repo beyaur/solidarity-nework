@@ -35,13 +35,13 @@ body.donor {
   background-position: center;
 }
 
-/* Link Page Background */
+/* New Link Page Background */
 body.links {  
   background-color: #889E73;
-  background-image: url('images/Palestinian_textile.jpg');
-  background-size: 200px;
-  background-position-x: right;
-  background-repeat: repeat-y;
+  background-image: url('images/Palestinian_textile.jpg'), url('images/Palestinian_textile.jpg');
+  background-position: right, left;
+  background-repeat: repeat-y, repeat-y;
+  background-size: 100px;
 }
 
 /* About Us Page Background */
