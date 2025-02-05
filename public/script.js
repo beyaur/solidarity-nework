@@ -92,4 +92,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 5000); // Changes message every 5 seconds
 });
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'  // Makes the scroll smooth
+  });
+}
+
 
