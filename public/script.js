@@ -75,3 +75,21 @@
   // Add event listener to form
   document.getElementById('submit-form').addEventListener('submit', handleSubmit);
 
+document.addEventListener("DOMContentLoaded", () => {
+  const messages = [
+    "Welcome to Solidarity Network!",
+    "Support Palestine, support justice.",
+    "Click around to learn more!",
+    "Together, we make a difference.",
+    "Boycott, divest, and stand for Palestine!",
+  ];
+
+  const speechBubble = document.getElementById("speech-bubble");
+
+  setInterval(() => {
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    speechBubble.textContent = randomMessage;
+  }, 5000); // Changes message every 5 seconds
+});
+
+
