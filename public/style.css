@@ -36,10 +36,8 @@ body.donor {
 }
 
 /* Link Page Background */
-body.links {
-  background-image: url('images/linkpage_bg.png');
-  background-size: cover;
-  background-position: center;
+body.links {  
+  background-color: #889E73;
 }
 
 /* About Us Page Background */
@@ -285,15 +283,10 @@ html, body {
   flex-direction: column;
 }
 
-.about-section, .boycott-section, .linkpage-section {
+.about-section, .boycott-section {
   padding-bottom: 150px;
   margin: auto;
   width:600px;
-}
-
-.link-box a {
-  font-size: 20px;
-  color: white;
 }
 
 /* Mascot Styling */
@@ -337,3 +330,81 @@ html, body {
 .mascot:hover .speech-bubble {
   opacity: 1;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.box {
+  width: 300px;
+  border-radius: 6px;
+  margin: 20px;
+  overflow: hidden;
+  background-color: beige;  
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+  padding: 10px;
+}
+
+.box img {
+  width: 100%;
+  height: 190px;
+  object-fit:cover;
+  transition: transform 0.5s ease;
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+.box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left:10px;
+  padding-right: 10px;
+  color: black;
+  text-align: left;
+}
+
+.box p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding-left:10px;
+  padding-right: 10px;
+  color: grey;
+  text-align: left;
+}
+
+.linkpage-section {
+  padding-bottom: 150px;
+}
+
+.linkpage-section h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 650;
+  text-shadow: 2px 2px black;
+  }
+
+.intro-text {
+  font-size: 25px;
+  font-weight: 450;
+  text-shadow: 2px 2px black;
+}
+
+.link {
+  display: inline-block;
+  background-color: #A94A4A;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-weight: 500;
+} 
