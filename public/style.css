@@ -289,7 +289,7 @@ html, body {
   flex-direction: column;
 }
 
-.about-section, .boycott-section {
+.boycott-section {
   padding-bottom: 150px;
   margin: auto;
   width:600px;
@@ -441,3 +441,7 @@ html, body {
   flex-wrap: wrap;
   margin-top: 25px;
 }
+
+.about-section {
+  padding-bottom: 150px;
+  width: 80%;
