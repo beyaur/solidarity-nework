@@ -44,13 +44,11 @@ body.links {
   background-size: 10%;
 }
 
-/* New About Us Page Background */
+/* About Us Page Background */
 body.about {
-  background-color: #beige;
-  background-image: url('images/Palestinian_pattern.jpg'), url('images/Palestinian_pattern.jpg');
-  background-position: right, left;
-  background-repeat: repeat-y, repeat-y;
-  background-size: 10%;
+  background-image: url('images/boycott_bg.png');
+  background-size: cover;
+  background-position: center;
 }
 
 /* Boycott Page Background */
@@ -289,7 +287,7 @@ html, body {
   flex-direction: column;
 }
 
-.boycott-section {
+.about-section, .boycott-section {
   padding-bottom: 150px;
   margin: auto;
   width:600px;
