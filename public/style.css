@@ -423,7 +423,15 @@ html, body {
 }
 
 .abt-a h1 {
-  font-size: 
+  font-size: 30px;
+  padding: 20px
+  justify-content: justify;
+}
+
+.abt-a p {
+  font-size: 20px;
+  padding: 20px
+  justify-content: justify;
 }
 
 .logo {
