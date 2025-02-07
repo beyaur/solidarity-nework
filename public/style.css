@@ -46,9 +46,11 @@ body.links {
 
 /* About Us Page Background */
 body.about {
-  background-image: url('images/boycott_bg.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #889E73;
+  background-image: url('images/Palestinian_pattern.jpg'), url('images/Palestinian_pattern.jpg');
+  background-position: right, left;
+  background-repeat: repeat-y, repeat-y;
+  background-size: 10%;
 }
 
 /* Boycott Page Background */
