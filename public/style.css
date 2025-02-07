@@ -414,3 +414,30 @@ html, body {
   text-align: left;
   font-weight: 500;
 } 
+
+.abt-a {
+  float: left;
+  width: 50%;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.abt-a h1 {
+  font-size: 
+}
+
+.logo {
+  float: right;
+  width: 50%;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  
+}
+
+.abt-b {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
