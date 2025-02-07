@@ -44,9 +44,9 @@ body.links {
   background-size: 10%;
 }
 
-/* About Us Page Background */
+/* New About Us Page Background */
 body.about {
-  background-color: #889E73;
+  background-color: #beige;
   background-image: url('images/Palestinian_pattern.jpg'), url('images/Palestinian_pattern.jpg');
   background-position: right, left;
   background-repeat: repeat-y, repeat-y;
@@ -453,3 +453,5 @@ html, body {
 .about-section {
   padding-bottom: 150px;
   width: 80%;
+  margin: auto;
+}
