@@ -165,7 +165,6 @@ footer {
   bottom: 0;
   width: 100%;
   margin-top: 50px;
-  margin: auto;
 }
 
 footer p {
@@ -413,3 +412,14 @@ html, body {
   text-align: left;
   font-weight: 500;
 } 
+
+.about-section footer {
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly translucent white */
+  color: black;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
