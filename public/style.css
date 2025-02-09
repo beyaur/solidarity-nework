@@ -329,6 +329,10 @@ html, body {
   opacity: 1;
 }
 
+.linkpage-section {
+ margin-top: 150px; 
+}
+
 .container {
   display: flex;
   justify-content: center;
