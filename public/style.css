@@ -420,26 +420,28 @@ html, body {
 .about-one {
   text-align: justify;
   text-justify: inter-word;
-  width: 500px;
+  width: 600 px;
+  padding: 15px;
   background-color: white;
 }
 
 .about-one p {
   font-size: 0.875em;
+  color: black;
 }
 
 .about-img {
-  width: 250px;
+  width: 300px;
   length: auto;
   border-radius: 6px;
   padding: 20px;
 }
 
 .about-two {
-  width: 750px;  
+  width: 800px;  
   display: flex;
   text-align: justify;
-  text-align: center;
+  text-align-last: center;
   text-justify: inter-word;
 }
 
@@ -450,5 +452,5 @@ html, body {
 }
 
 .about-twobox p {
-  font-size: 14px;
+  font-size: 20px;
 }
