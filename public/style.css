@@ -410,21 +410,19 @@ html, body {
 .about-section {
   padding-bottom: 150px;
   width:80%;
-  flex-wrap: wrap;
-  display-flex: flex;
+  display: flex;
 }
-  
+
+.about-one {
+  flex-grow: 1;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .about-img {
   width: 150px;
   length: auto;
   border-radius: 6px;
   float: right;
   padding: 10px;
-}
-
-.about-one {
-  float: left;
-  width: 40%;
-  text-align: justify;
-  text-justify: inter-word;
 }
