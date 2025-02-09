@@ -439,6 +439,7 @@ html, body {
   width: 750px;  
   display: flex;
   text-align: justify;
+  text-align: center;
   text-justify: inter-word;
 }
 
