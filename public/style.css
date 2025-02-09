@@ -412,13 +412,10 @@ html, body {
   font-weight: 500;
 } 
 
-.about-section footer {
-    background-color: rgba(255, 255, 255, 0.5); /* Slightly translucent white */
-  color: black;
-  padding: 10px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin-top: 50px;
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
 }
