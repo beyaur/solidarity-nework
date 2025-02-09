@@ -417,7 +417,7 @@ html, body {
 .about-one {
   text-align: justify;
   text-justify: inter-word;
-  flex-basis: 300px;
+  width: 600px;
 }
 
 .about-img {
