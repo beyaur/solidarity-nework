@@ -411,6 +411,7 @@ html, body {
   padding-bottom: 150px;
   width:80%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .about-one {
@@ -423,6 +424,10 @@ html, body {
   width: 150px;
   length: auto;
   border-radius: 6px;
-  float: right;
-  padding: 10px;
+  padding: 20px;
+}
+
+.about-two {
+  align-self: flex-end;
+  display: flex;
 }
