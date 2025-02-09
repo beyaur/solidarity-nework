@@ -436,4 +436,8 @@ html, body {
   text-justify: inter-word;
 }
 
-
+.about-twobox {
+  flex-wrap: wrap;
+  padding: 15px;
+  width: 350px;
+}
