@@ -425,7 +425,7 @@ html, body {
 }
 
 .about-one p {
-  font-size: 50px;
+  font-size: 14px;
   color: grey;
 }
 
@@ -447,4 +447,8 @@ html, body {
   flex-wrap: wrap;
   padding: 15px;
   width: 350px;
+}
+
+.about-twobox p {
+  font-size: 14px;
 }
