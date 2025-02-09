@@ -412,6 +412,7 @@ html, body {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .about-one {
@@ -428,6 +429,8 @@ html, body {
 }
 
 .about-two {
-  align-self: flex-end;
+  width: 750px;  
   display: flex;
+  text-align: justify;
+  text-justify: inter-word;
 }
