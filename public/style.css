@@ -287,7 +287,7 @@ html, body {
   flex-direction: column;
 }
 
-.about-section, .boycott-section {
+.boycott-section {
   padding-bottom: 150px;
   margin: auto;
   width:600px;
@@ -412,3 +412,25 @@ html, body {
   text-align: left;
   font-weight: 500;
 } 
+
+.about-section {
+padding-bottom: 150px;
+  margin: auto;
+  width:80%;
+  flex-wrap: wrap;
+}
+  
+.about-img {
+  width: 30%;
+  length: auto;
+  border-radius: 6px;
+  float: right;
+  padding: 10px;
+}
+
+.about-one {
+  float: left;
+  width: 40%;
+  text-align: justify;
+  text-justify: inter-word;
+}
