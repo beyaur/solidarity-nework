@@ -407,6 +407,10 @@ html, body {
   font-weight: 500;
 } 
 
+link_header, intro-text {
+  text-align: center;
+}
+
 .about-section {
   padding-bottom: 150px;
   justify-content: center;
