@@ -149,12 +149,6 @@ a:hover, a:active {
   border: 2px solid purple;
 }
 
-/* Centered Content */
-.centered-content {
-  text-align: center;
-  margin-top: 100px;
-}
-
 /* Footer */
 footer {
   background-color: rgba(255, 255, 255, 0.5); /* Slightly translucent white */
