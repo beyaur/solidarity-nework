@@ -408,8 +408,7 @@ html, body {
 } 
 
 .about-section {
-padding-bottom: 150px;
-  margin: auto;
+  padding-bottom: 150px;
   width:80%;
   flex-wrap: wrap;
 }
