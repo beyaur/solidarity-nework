@@ -411,11 +411,3 @@ html, body {
   text-align: left;
   font-weight: 500;
 } 
-
-footer {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid;
-}
