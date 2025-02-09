@@ -420,6 +420,12 @@ html, body {
   text-align: justify;
   text-justify: inter-word;
   width: 500px;
+  background-color: white;
+}
+
+.about-one p {
+  font-size: 50px;
+  color: grey;
 }
 
 .about-img {
