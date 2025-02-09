@@ -425,8 +425,7 @@ html, body {
 }
 
 .about-one p {
-  font-size: 14px;
-  color: grey;
+  font-size: 0.875em;
 }
 
 .about-img {
