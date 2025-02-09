@@ -411,10 +411,11 @@ html, body {
   padding-bottom: 150px;
   width:80%;
   flex-wrap: wrap;
+  display-flex: flex;
 }
   
 .about-img {
-  width: 30%;
+  width: 150px;
   length: auto;
   border-radius: 6px;
   float: right;
