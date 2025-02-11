@@ -430,6 +430,10 @@ html, body {
   color: black;
 }
 
+.about-one h2 {
+  color: black;
+}
+
 .about-img {
   width: 300px;
   length: auto;
