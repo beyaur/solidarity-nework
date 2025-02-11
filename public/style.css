@@ -432,6 +432,12 @@ html, body {
 
 .about-one p {
   font-size: 0.875em;
+  color: black;
+}
+
+.about-one h2 {
+  font-size: 0.875em;
+  color: black;
 }
 
 .about-img {
@@ -446,14 +452,16 @@ html, body {
   display: flex;
   text-align: justify;
   text-align-last: center;
+  margin: auto;
+  margin-top: 20px;
   text-justify: inter-word;
+  border-top: 1px solid black;
 }
 
 .about-twobox {
   flex-wrap: wrap;
   padding: 15px;
-  width: 350px;
-  margin-bottom: 20px;
+  width: 450px;
 }
 
 .about-twobox p {
