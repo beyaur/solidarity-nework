@@ -455,14 +455,15 @@ html, body {
   margin: auto;
   margin-top: 40px;
   text-justify: inter-word;
-  border-top: 2px solid beige;
 }
 
 .about-twobox {
   flex-wrap: wrap;
   padding: 15px;
+  margin-left: 5px;
   width: 450px;
   border-right: 2px solid beige;
+  border-bottom: 2px solid beige;
 }
 
 .about-twobox p {
