@@ -428,6 +428,7 @@ html, body {
   width: 600px;
   padding: 15px;
   background-color: white;
+  margin-bottom: 30px;
 }
 
 .about-one p {
@@ -452,15 +453,16 @@ html, body {
   text-align: justify;
   text-align-last: center;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
   text-justify: inter-word;
-  border-top: 1px solid black;
+  border-top: 2px solid beige;
 }
 
 .about-twobox {
   flex-wrap: wrap;
   padding: 15px;
   width: 450px;
+  border-right: 2px solid beige;
 }
 
 .about-twobox p {
