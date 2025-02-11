@@ -46,7 +46,7 @@ body.links {
 
 /* About Us Page Background */
 body.about {
-  background-color: #889E73;
+  background-color: #A94A4A;
   background-image: url('images/Palestinian_textile.jpg'), url('images/Palestinian_textile.jpg');
   background-position: right, left;
   background-repeat: repeat-y, repeat-y;
@@ -56,7 +56,7 @@ body.about {
 
 /* Boycott Page Background */
 body.boycott {
-background-color: #889E73;
+background-color: beige;
   background-image: url('images/Palestinian_textile.jpg'), url('images/Palestinian_textile.jpg');
   background-position: right, left;
   background-repeat: repeat-y, repeat-y;
