@@ -427,16 +427,10 @@ html, body {
   text-justify: inter-word;
   width: 600px;
   padding: 15px;
-  background-color: white;
 }
 
 .about-one p {
   font-size: 0.875em;
-  color: black;
-}
-
-.about-one h2 {
-  color: black;
 }
 
 .about-img {
@@ -458,6 +452,7 @@ html, body {
   flex-wrap: wrap;
   padding: 15px;
   width: 350px;
+  margin-top: 20px;
 }
 
 .about-twobox p {
