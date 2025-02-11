@@ -52,10 +52,9 @@ body.about {
   background-repeat: repeat-y, repeat-y;
   background-size: 10%;
 }
-}
 
 /* Boycott Page Background */
-.boycott {
+body.boycott {
 background-color: beige;
   background-image: url('images/Palestinian_textile.jpg'), url('images/Palestinian_textile.jpg');
   background-position: right, left;
@@ -460,7 +459,7 @@ html, body {
 .about-twobox {
   flex-wrap: wrap;
   padding: 15px;
-  margin-left: 5px;
+  margin-left: 10px;
   width: 450px;
   border-right: 2px solid beige;
   border-bottom: 2px solid beige;
