@@ -427,6 +427,7 @@ html, body {
   text-justify: inter-word;
   width: 600px;
   padding: 15px;
+  background-color: white;
 }
 
 .about-one p {
@@ -441,7 +442,7 @@ html, body {
 }
 
 .about-two {
-  width: 800px;  
+  width: 900px;  
   display: flex;
   text-align: justify;
   text-align-last: center;
@@ -456,5 +457,5 @@ html, body {
 }
 
 .about-twobox p {
-  font-size: 20px;
+  font-size: 25px;
 }
