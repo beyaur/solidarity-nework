@@ -55,7 +55,7 @@ body.about {
 }
 
 /* Boycott Page Background */
-body.boycott {
+.boycott {
 background-color: beige;
   background-image: url('images/Palestinian_textile.jpg'), url('images/Palestinian_textile.jpg');
   background-position: right, left;
