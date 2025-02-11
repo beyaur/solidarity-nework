@@ -56,9 +56,11 @@ body.about {
 
 /* Boycott Page Background */
 body.boycott {
-  background-image: url('images/boycott_bg.png');
-  background-size: cover;
-  background-position: center;
+background-color: #889E73;
+  background-image: url('images/Palestinian_textile.jpg'), url('images/Palestinian_textile.jpg');
+  background-position: right, left;
+  background-repeat: repeat-y, repeat-y;
+  background-size: 10%;
 }
 
 /* Fixed Navigation Bar */
