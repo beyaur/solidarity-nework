@@ -2,7 +2,7 @@
 
 This update focuses on enhancing the website by incorporating persistent data storage on the server, allowing for better user interaction and content management. The primary data type that will be saved includes **user email subscription data**, enabling users to subscribe to website updates and receive notifications via email. Additionally, an update will be implemented to allow users to unsubscribe from these notifications at any time. To enhance security, users who wish to unsubscribe will be sent a **4-digit confirmation code** to verify their request before finalizing the cancellation. The update will introduce a new **Subscription Management Page**, where users can manage their email preferences.
 
-The saved data will be used to send updates and announcements to subscribed users. This ensures that users who opt in receive relevant information about the website’s latest changes. Additionally, the ability to unsubscribe with verification provides users with control over their notifications while ensuring security and preventing accidental unsubscriptions.
+The saved data will be used to send updates and announcements to subscribed users. This ensures that users who opt in receive relevant information about the website’s latest changes. This will also allow for an efficient way to directly reach out to users regarding neccessary calls for assistance and monetary help. Additionally, the ability to unsubscribe with verification provides users with control over their notifications while ensuring security and preventing accidental unsubscriptions.
 
 ---
 
