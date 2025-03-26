@@ -25,6 +25,7 @@ The saved data will be used to send updates and announcements to subscribed user
 
 **Wireframe Design for CRUD Implementation**
 Link to the wireframes: https://drive.google.com/file/d/1d1Cua3HRhfl2whP7KWzxnpqCIaiSSqC1/view?usp=sharing 
+                        https://drive.google.com/file/d/1Crfq-sTh0nF7hTKo1blcRj_liQ_p5CTD/view?usp=sharing
 
 1. **Subscription Management Page (CRUD for Email Subscriptions)**
    - Create: Users can enter their email to subscribe to updates.
