@@ -43,6 +43,7 @@ app.post('/send-email', (req, res) => {
         to: req.body.email,  // Email from the user input
         subject: 'Notification about Campaign',
         text: 'Thank you for your interest in receiving campaign updates!'
+        If you wish to Unsubscribe from receiving our updates, click here: https://aypltra.github.io/solidarity-nework/public/unsubscribe?email=${encodeURIComponent(req.body.email)}`
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
